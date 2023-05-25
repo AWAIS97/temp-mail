@@ -5,15 +5,27 @@ import { downloadURL } from "../utils";
 import { styled } from "@mui/material/styles";
 import { Container, Typography, Button, Card } from "@mui/material";
 
+const CustomHeaderCard = styled(Card)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "24px",
+  padding: "2rem",
+  flexWrap: "wrap",
+  gap: "10px",
+}));
+
 const EmailCustomCard = styled(Card)(({ theme }) => ({
   padding: "2rem",
   marginBottom: "24px",
 }));
 const EmailCustomHeader = styled(Container)(({ theme }) => ({
   display: "flex",
+  flexWrap: "wrap",
+  gap: "10px",
   justifyContent: "space-between",
-  padding:'unset !important'
+  padding: "unset !important",
 }));
+
 const EmailCustomContent = styled(Container)(({ theme }) => ({
   border: "1px solid light-grey",
   borderStyle: "dotted",
@@ -28,28 +40,35 @@ const EmailViewer = ({ email, content }) => {
   };
   return (
     <Container maxWidth="md">
-      <Card
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "24px",
-          padding: "2rem",
-        }}
-      >
-        <Typography variant="h5" component="h1" align="center">
+      <CustomHeaderCard>
+        <Typography
+          variant="h5"
+          component="h1"
+          sx={{ typography: { sm: "body1", xs: "body1" } }}
+        >
           Subject: {content.subject === "" ? "(no subject)" : content.subject}
         </Typography>
         <Button variant="contained" onClick={redirect}>
           Go Back
         </Button>
-      </Card>
+      </CustomHeaderCard>
 
       <EmailCustomCard maxWidth="md">
         <EmailCustomHeader>
-          <Typography variant="h5" component="h1">
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{ typography: { sm: "body1", xs: "body1" } }}
+          >
             Sender: {content.from}
           </Typography>
-          <Typography>Date: {content.date}</Typography>
+          <Typography
+            variant="body2"
+            component="p"
+            sx={{ typography: { sm: "body2", xs: "body2" } }}
+          >
+            Date: {content.date}
+          </Typography>
         </EmailCustomHeader>
 
         <EmailCustomContent>

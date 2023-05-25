@@ -1,4 +1,4 @@
-import img1 from "./own-vpn-and-fake-Email.jpeg";
+import img1 from "./own-vpn-and-fake-email.jpeg";
 import img2 from "./the-difference-between-a-regular-mailbox-and-temp-mail.jpeg";
 import img3 from "./how-to-prevent-other-people-from-seeing-your-email.jpeg";
 import img4 from "./how-to-prank-a-friend-using-the-temp-mail-service.jpeg";

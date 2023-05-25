@@ -8,7 +8,7 @@ import { Container, Typography } from "@mui/material";
 const CustomContainer = styled(Container)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
-  padding: "4rem 0rem",
+  padding: "4rem 2rem",
 }));
 
 const Home = () => {

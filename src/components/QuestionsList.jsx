@@ -1,11 +1,11 @@
 import React from "react";
 import { questionsList } from "../contants";
 import { styled } from "@mui/material/styles";
-import { Typography, Card, Container } from "@mui/material";
+import { Typography, Card, Container, CardContent } from "@mui/material";
 import ReactHtmlParser from "react-html-parser";
 
 const CustomCard = styled(Card)(({ theme }) => ({
-  padding: "4rem",
+  padding: "2rem",
 }));
 
 const QuestionsList = () => {
@@ -15,6 +15,7 @@ const QuestionsList = () => {
         <Typography variant="h5" component="h1" align="center">
           Popular Questions
         </Typography>
+        <CardContent>
         {questionsList.map((data) => {
           return (
             <div style={{ marginBottom: "1rem" }}>
@@ -54,6 +55,7 @@ const QuestionsList = () => {
             </div>
           );
         })}
+        </CardContent>
       </CustomCard>
     </Container>
   );

@@ -47,7 +47,7 @@ const CustomEmailModal = ({
     "esiix.com",
   ];
   return (
-    <Dialog open={customEmailModal} style={{ padding: "4rem" }}>
+    <Dialog open={customEmailModal}>
       <DialogTitle>Custom Email</DialogTitle>
       <DialogContent>
         <DialogContentText>

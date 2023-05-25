@@ -36,6 +36,8 @@ const Blog = (props) => {
           marginBottom: "2rem",
           display: "flex",
           justifyContent: "space-between",
+          flexWrap:'wrap',
+          gap:'10px'
         }}
       >
         <Typography variant="h5">Blog:{blog?.title}</Typography>

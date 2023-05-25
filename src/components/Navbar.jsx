@@ -28,9 +28,9 @@ const Navbar = () => {
           <Button color="inherit" onClick={() => navigate("/about")}>
             About
           </Button>
-          <Button color="inherit" onClick={() => {}}>
+          {/* <Button color="inherit" onClick={() => {}}>
             Login
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
     </Box>

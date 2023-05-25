@@ -19,12 +19,14 @@ const CustomCard = styled(Card)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   padding: "2rem",
-  height: "15rem",
+  gap:'15px'
 }));
 
 const ButtonsContainer = styled(Container)(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-between",
+  flexWrap:'wrap',
+  justifyContent: "center",
+  gap:'10px'
 }));
 
 const EmailContainer = (props) => {
@@ -40,12 +42,15 @@ const EmailContainer = (props) => {
     setCurrentEmail(tempMail);
   }, [tempMail]);
 
-  const getAnotherEmail = async (customEmail) => {
+  const getAnotherEmail = (customEmail) => {
     customEmail && setCurrentEmail(customEmail);
-    await deleteTempEmail(currentEmail);
-    // getTempMail().then((e) => {
-    //   setCurrentEmail(e);
-    // });
+    deleteTempEmail(currentEmail);
+  };
+
+  const getNewEmail = () => {
+    getTempMail().then((e) => {
+      setCurrentEmail(e);
+    });
   };
 
   const deleteHandler = () => {
@@ -64,11 +69,7 @@ const EmailContainer = (props) => {
           </Typography>
           <EmailInput email={currentEmail} />
           <ButtonsContainer>
-            <Button
-              variant="contained"
-              color="success"
-              onClick={() => getAnotherEmail()}
-            >
+            <Button variant="contained" color="success" onClick={getNewEmail}>
               Get New Email
             </Button>
             <Button

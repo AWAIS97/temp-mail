@@ -32,7 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div style={{ margin: "6rem" }}>
+      <div style={{ margin: "6rem 0px" }}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/inbox" element={<Inbox />} />

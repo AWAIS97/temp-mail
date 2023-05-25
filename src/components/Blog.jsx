@@ -11,7 +11,7 @@ import {
   Button,
 } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
-import { blogList } from "../contants";
+import { blogList } from "../assets/contants";
 
 const Blog = (props) => {
   const { id } = useParams();

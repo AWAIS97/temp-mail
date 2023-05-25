@@ -1,5 +1,5 @@
 import React from "react";
-import { questionsList } from "../contants";
+import { questionsList } from "../assets/contants";
 import { styled } from "@mui/material/styles";
 import { Typography, Card, Container, CardContent } from "@mui/material";
 import ReactHtmlParser from "react-html-parser";

@@ -1,5 +1,5 @@
 import React from "react";
-import { blogList } from "../contants";
+import { blogList } from "../assets/contants";
 import ReactHtmlParser from "react-html-parser";
 import {
   Typography,

@@ -1,21 +1,21 @@
+import { img1, img2, img3, img4, img5, img6 } from "./blogImgs";
 export const questionsList = [
   {
     question: "The Tech behind Disposable Email Addresses",
-    answer:`
+    answer: `
     <p>Everyone owns an email address each and every hour, for everything from connecting at work, with business prospects, reaching out to friends and colleagues using the email address as an online passport. Nearly 99% of all apps and services we sign-up today required an email address, likewise to most shoppers loyalty cards, contest and offer entries, and more.<br><br>We all enjoy having an email address, but getting tons of spam emails each day doesn’t feel comfortable. Furthermore, it’s entirely common for stores to have their databases hacked, leaving your business email address at risk and more likely to end up on spam lists. Still, nothing done online is 100% private. Thus you need to protect your email contact identity and best done using disposable emails address.</p>
-    `
+    `,
   },
   {
     question: "So, What Is A Disposable Email Address?",
-    answer:`
+    answer: `
     <p>Recently, I found a bounce rate complex than usual on my latest email blast! I later realized the surge of users (or bots) signing up for my services hiding their real identity using disposable mail addresses.</p>
     <p>Disposable email address (DEA) technically means an approach where a user’s with a unique email address gets a temporary email address for your current contact. The DEA allow the creation of an email address that passes validity need to sign-up for services and website without having to show your true identity.<br><br>Disposable emails address if compromised or used in connection with email abuse online, the owner can’t be tied to the abuse and quickly cancel its application without affecting other contacts. With temporary mail, you can you receive your emails from the fake emails in your genuine emails address for a specified time set. The fake email address is simply a through-away email, temporary email set and self-destructs email.<br><br></p>
-    `
+    `,
   },
   {
     question: "Why would you need a fake email address?",
-    answer:
-      `
+    answer: `
       <p>You must have noted services such as Amazon Prime, Hulu and Netflix allow limited-time test runs(trials), however, if still determined to use the services all you need is a disposable email address. Technically, you can extend your trial usage using a different email address linked to your original (genuine) after the trial period expires.<br><br>An offline or online retailer tend to demand an email address to take advantage of their offers, however, this result in an unwanted deluge of spam promotional emails that you could avoid.&nbsp;Temporary email address makes it easy to cut out those irritating messages you are still receiving.<br><br>Technically, the idea of a temporary email address conjures up with black hat hackers and underworld internet, but there are convincing reason to us fake email services.<br><br>If you are looking for legitimate reasons to use a disposable email address here’s a few:</p>
      `,
     list: [
@@ -76,15 +76,15 @@ export const questionsList = [
   },
   {
     question: "How to Use Disposable Email Address?",
-    answer:`
-    <p>Users choose to get disposable email address by creating a new email account with their current email provider’s such as Gmail, but the account comes with many challenges such as you will have to manage emails new account. Users, who opt for free mail services by creating a new account, put up with a new email address.<br><br>It’d work if you had one email address and a few disposable emails from temp-mail.org and managed one account inbox.<br><br>The amazing thing about a disposable email address is you can forward directly to your real email account. In case the disposable email address is compromised, and you are suspicious of one of your contacts you can have those emails sent directly to your trash, and for those necessary connections have them sent directly to your real email address inbox.</p>`
+    answer: `
+    <p>Users choose to get disposable email address by creating a new email account with their current email provider’s such as Gmail, but the account comes with many challenges such as you will have to manage emails new account. Users, who opt for free mail services by creating a new account, put up with a new email address.<br><br>It’d work if you had one email address and a few disposable emails from temp-mail.org and managed one account inbox.<br><br>The amazing thing about a disposable email address is you can forward directly to your real email account. In case the disposable email address is compromised, and you are suspicious of one of your contacts you can have those emails sent directly to your trash, and for those necessary connections have them sent directly to your real email address inbox.</p>`,
   },
 ];
 
 export const blogList = [
   {
     title: "Own VPN and fake email?",
-    image: "./src/assets/blogImgs/own-vpn-and-fake-email.jpeg",
+    image: img1,
     description: `
 <div>     
 <p>If your VPN can permit you to decide on the authentication key dimensions, then, you should choose a more compact authentication key size to accelerate your VPN connection.  Basically a VPN has been designed to supply an encrypted and a safe tunnel which can be employed to transmit the data among a remote user along with the network of the business.  The type of proxy selected by you depends upon the degree of privacy you would like to have.  In truth, it sometimes increases the sum of spam received because by utilizing the opt-out link you're confirming the validity of your email address.  You have to get rid of the virus in order for your computer can run correctly.  Computer viruses can cause a mess on a computer system and get started damaging different files. </p><br><br>
@@ -101,8 +101,7 @@ export const blogList = [
   },
   {
     title: "The difference between a regular mailbox and TEMP MAIL",
-    image:
-      "./src/assets/blogImgs/the-difference-between-a-regular-mailbox-and-temp-mail.jpeg",
+    image: img2,
     description: `
     <div>     
 <p>Everyone out there on the internet has their own personal email address. It is now a necessary part of life in the modern world. However, most people do not open their personal email addresses every day. I myself don't login into my personal email for weeks at a time, as I don’t have to. But most other services on the internet require an email address to sign up and log in. Any subscription-based service, a site that is linked to your financials, or social media platforms requires an email to login and register. So it is important that you have a personal email address.</p><br><br>
@@ -118,8 +117,7 @@ export const blogList = [
   },
   {
     title: "How to prevent other people from seeing your email?",
-    image:
-      "./src/assets/blogImgs/how-to-prevent-other-people-from-seeing-your-email.jpeg",
+    image: img3,
     description: `
     <div>     
 <p>Protecting your email is so important in this day and age. No matter what type of email you have, you should be very wary of who you give your email address. When internet security and safety guides inform their readers about protecting their email, they usually mean protecting it from dangerous entities that are on the internet. Phishing scammers exist on every part of the internet, and their constant success means that they aren't going anywhere.</p><br><br>
@@ -138,8 +136,7 @@ export const blogList = [
   },
   {
     title: "How to Prank a Friend Using the TEMP MAIL Service",
-    image:
-      "./src/assets/blogImgs/how-to-prank-a-friend-using-the-temp-mail-service.jpeg",
+    image: img4,
     description: `
     <div>     
 <p>Life has a strange way of putting an idea into our heads. There will be some days where we wake up in the morning, drink a giant cup of coffee, inhale a breath of fresh cool air as we walk outside, and then decide to prank our best friend this week. As long as you pick the right type of prank that matches well with your target's personality and the prank is not malicious in any way, most people do enjoy a good prank. Once they discover that they are being pranked, shock turns to slight embarrassment and laughter as realization dawns on them.</p><br><br>
@@ -161,8 +158,7 @@ export const blogList = [
   },
   {
     title: "Are you annoyed by SPAM? Use temporary email addresses.",
-    image:
-      "./src/assets/blogImgs/are-you-annoyed-by-spam-use-temporary-email-addresses.jpeg",
+    image: img5,
     description: `
     <div>     
 
@@ -183,8 +179,7 @@ export const blogList = [
   {
     title:
       "What is Phishing and How to Protect Yourself Using the TEMP MAIL Service",
-    image:
-      "./src/assets/blogImgs/what-is-phishing-and-how-to-protect-yourself-using-the-temp-mail-service.jpeg",
+    image: img6,
     description: `
 <div>
 <p>Every year, millions of people fall victim to phishing scams and end up losing tens of millions of dollars a year to scammers. A phishing scam is a scam where scammers send fake emails or phone calls and try to trick the target into giving them their personal information. One of the biggest reasons why so many people are still falling for scams is how sophisticated phishing scammers make their scams. Some scammers even go as far as having a dedicated phone line to pretend to be the customer service of a bank or credit card.</p><br><br>

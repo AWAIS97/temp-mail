@@ -44,7 +44,7 @@ const EmailViewer = ({ email, content }) => {
         <Typography
           variant="h5"
           component="h1"
-          sx={{ typography: { xs: "body1" } }}
+          sx={{ typography: { xs: "body1", md: "h5" } }}
         >
           Subject: {content.subject === "" ? "(no subject)" : content.subject}
         </Typography>
@@ -58,14 +58,14 @@ const EmailViewer = ({ email, content }) => {
           <Typography
             variant="h5"
             component="h1"
-            sx={{ typography: { sm: "body1", xs: "body1" } }}
+            sx={{ typography: { xs: "body1", md: "h5" } }}
           >
             Sender: {content.from}
           </Typography>
           <Typography
-            variant="body2"
+            variant="h5"
             component="p"
-            sx={{ typography: { sm: "body2", xs: "body2" } }}
+            sx={{ typography: { xs: "body2", md: "h5" } }}
           >
             Date: {content.date}
           </Typography>

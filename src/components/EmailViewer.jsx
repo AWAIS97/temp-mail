@@ -44,7 +44,7 @@ const EmailViewer = ({ email, content }) => {
         <Typography
           variant="h5"
           component="h1"
-          sx={{ typography: { sm: "body1", xs: "body1" } }}
+          sx={{ typography: { xs: "body1" } }}
         >
           Subject: {content.subject === "" ? "(no subject)" : content.subject}
         </Typography>

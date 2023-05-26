@@ -33,24 +33,27 @@ const EmailContainer = (props) => {
   const { tempMail, getTempMailRequest } = props;
   const [currentEmail, setCurrentEmail] = useState("");
   const [customEmailModal, setCustomEmailModal] = useState(false);
+  const localEmail = localStorage.getItem( 'tempMail' );
 
   useEffect(() => {
-    !tempMail && getTempMailRequest();
+    !localEmail && getTempMailRequest();
   }, []);
 
   useEffect(() => {
-    setCurrentEmail(tempMail);
+    tempMail && localStorage.setItem( 'tempMail', tempMail );
+    const email = localStorage.getItem( 'tempMail' );
+    email && setCurrentEmail(email);
   }, [tempMail]);
+ 
 
   const getAnotherEmail = (customEmail) => {
     customEmail && setCurrentEmail(customEmail);
     deleteTempEmail(currentEmail);
+    localStorage.setItem( 'tempMail', customEmail );
   };
 
   const getNewEmail = () => {
-    getTempMail().then((e) => {
-      setCurrentEmail(e);
-    });
+    getTempMailRequest();
   };
 
   const deleteHandler = () => {

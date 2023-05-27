@@ -42,7 +42,7 @@ const EmailContainer = (props) => {
   useEffect(() => {
     let saved = localStorage.getItem("savedDate");
     let date = new Date().getDate();
-    if (saved && date !== parseInf(saved)) {
+    if (saved && date !== parseInt(saved)) {
       localStorage.clear();
     }
     tempMail && localStorage.setItem("tempMail", tempMail);

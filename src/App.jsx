@@ -6,7 +6,15 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { Navbar, Home, Inbox, BlogList,Blog, About, Footer } from "./components";
+import {
+  Navbar,
+  Home,
+  Inbox,
+  BlogList,
+  Blog,
+  About,
+  Footer,
+} from "./components";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -35,10 +43,10 @@ function App() {
       <div style={{ margin: "6rem 0px" }}>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/inbox" element={<Inbox />} />
-          <Route exact path="/blog" element={<BlogList />} />
-          <Route exact path="/blog/:id" element={<Blog />} />
-          <Route exact path="/about" element={<About />} />
+          <Route path="/inbox" element={<Inbox />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <Footer />

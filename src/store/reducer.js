@@ -7,7 +7,6 @@ const Reducer = (state = initialState, action) => {
   console.log(state.tempmail);
   switch (action.type) {
     case "GET_TEMP_MAIL_SUCCEEDED": {
-      debugger
       return {
         tempmail: action.response,
       };

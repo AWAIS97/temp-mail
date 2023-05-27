@@ -19,37 +19,42 @@ const CustomCard = styled(Card)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   padding: "2rem",
-  gap:'15px'
+  gap: "15px",
 }));
 
 const ButtonsContainer = styled(Container)(({ theme }) => ({
   display: "flex",
-  flexWrap:'wrap',
+  flexWrap: "wrap",
   justifyContent: "center",
-  gap:'10px'
+  gap: "10px",
 }));
 
 const EmailContainer = (props) => {
   const { tempMail, getTempMailRequest } = props;
   const [currentEmail, setCurrentEmail] = useState("");
   const [customEmailModal, setCustomEmailModal] = useState(false);
-  const localEmail = localStorage.getItem( 'tempMail' );
+  const localEmail = localStorage.getItem("tempMail");
 
   useEffect(() => {
     !localEmail && getTempMailRequest();
   }, []);
 
   useEffect(() => {
-    tempMail && localStorage.setItem( 'tempMail', tempMail );
-    const email = localStorage.getItem( 'tempMail' );
+    let saved = localStorage.getItem("savedDate");
+    let date = new Date().getDate();
+    if (saved && date !== parseInf(saved)) {
+      localStorage.clear();
+    }
+    tempMail && localStorage.setItem("tempMail", tempMail);
+    localStorage.setItem("savedDate", date);
+    const email = localStorage.getItem("tempMail");
     email && setCurrentEmail(email);
   }, [tempMail]);
- 
 
   const getAnotherEmail = (customEmail) => {
     customEmail && setCurrentEmail(customEmail);
     deleteTempEmail(currentEmail);
-    localStorage.setItem( 'tempMail', customEmail );
+    localStorage.setItem("tempMail", customEmail);
   };
 
   const getNewEmail = () => {

@@ -9,6 +9,10 @@ const EmailList = (props) => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
+    setList([]);
+  }, [email]);
+
+  useEffect(() => {
     mailList && setList(mailList);
   }, [mailList]);
 

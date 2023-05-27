@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { styled } from "@mui/material/styles";
-import { Container, Typography, Toolbar, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
+import MailIcon from "@mui/icons-material/Mail";
 
 const CustomContainer = styled(`footer`)(({ theme }) => ({
   backgroundColor: "#1976d2",
@@ -10,7 +11,24 @@ const CustomContainer = styled(`footer`)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding:'1rem'
+  padding: "1rem",
+  flexWrap:'wrap'
+}));
+
+const CustomLogo = styled("div")(({ theme }) => ({
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  background: "#1a486e",
+  padding: "4px",
+  borderRadius: 10,
+}));
+
+const CustomTypography = styled(Typography)(({ theme }) => ({
+  fontFamily: "monospace",
+  fontWeight: 700,
+  letterSpacing: ".3rem",
+  textDecoration: "none",
 }));
 
 const Footer = () => {
@@ -18,18 +36,19 @@ const Footer = () => {
 
   return (
     <CustomContainer>
-      <div>
-        <Typography
+      <CustomLogo>
+        <MailIcon fontSize="large" sx={{ mr: 1 }} />
+        <CustomTypography
           variant="h6"
           component="div"
-          style={{ cursor: "pointer", flexGrow: 1 }}
           onClick={() => navigate("/")}
         >
           Temp Mail
-        </Typography>
-      </div>
+        </CustomTypography>
+      </CustomLogo>
+
       <div>
-        <Typography>&copy; Copyright 2023 Temp Mail</Typography>
+        <Typography variant="body2">&copy; Copyright 2023 Temp Mail</Typography>
       </div>
       <div>
         <Button color="inherit" onClick={() => navigate("/blog")}>

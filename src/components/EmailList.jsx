@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 
 const EmailList = (props) => {
   const { mailList, tempMail, getMailInboxRequest } = props;
-  const email = tempMail || localStorage.getItem( 'tempMail' );;
+  const email = localStorage.getItem( 'tempMail' );;
   const [list, setList] = useState([]);
 
   useEffect(() => {

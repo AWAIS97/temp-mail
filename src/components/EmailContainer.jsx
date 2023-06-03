@@ -41,8 +41,12 @@ const EmailContainer = (props) => {
 
   useEffect(() => {
     let saved = localStorage.getItem("savedDate");
+    const savedEmail = localStorage.getItem("tempMail");
     let date = new Date().getDate();
-    if (saved && date !== parseInt(saved)) {
+    if (
+      saved &&
+      (date !== parseInt(saved) || (tempMail && savedEmail !== tempMail))
+    ) {
       localStorage.clear();
     }
     tempMail && localStorage.setItem("tempMail", tempMail);
@@ -64,7 +68,7 @@ const EmailContainer = (props) => {
   const deleteHandler = () => {
     if (window.confirm("Are you sure you wish to delete this email?")) {
       deleteTempEmail(currentEmail);
-      getAnotherEmail();
+      getTempMailRequest();
     }
   };
 

@@ -39,7 +39,8 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <Router>
+    //TODO: HASH route OR BROWSER Route ?
+    <Router> 
       <Navbar />
       <div style={{ margin: "6rem 0px" }}>
         <Routes>

@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   RouterProvider,
+  HashRouter as Router,
   BrowserRouter,
   Link,
   Route,
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <div style={{ margin: "6rem 0px" }}>
         <Routes>
@@ -52,7 +53,7 @@ function App() {
       <Footer />
 
       {/* <RouterProvider router={router} /> */}
-    </BrowserRouter>
+    </Router>
   );
 }
 

@@ -32,7 +32,7 @@ export const questionsList = [
       {
         title: "Sign-Up For Double Account With A Web App:",
         discription:
-          "You need another IFTTT account to program a second Twitter account run for your marketing site. A new account needs a different mail from your default, to rule out managing a new email inbox, get a new disposable email address at temp-mail",
+          "You need another IFTTT account to program a second Twitter account run for your marketing site. A new account needs a different mail from your default, to rule out managing a new email inbox, get a new disposable email address at your temp mail",
       },
       {
         title: "Eliminate Spam:",
@@ -70,14 +70,14 @@ export const questionsList = [
       },
       {
         title:
-          "Thus stay spam free and save time with temp-mail.org your favorite email service.",
+          "Thus stay spam free and save time with your-tempmail.com your favorite email service.",
       },
     ],
   },
   {
     question: "How to Use Disposable Email Address?",
     answer: `
-    <p>Users choose to get disposable email address by creating a new email account with their current email provider’s such as Gmail, but the account comes with many challenges such as you will have to manage emails new account. Users, who opt for free mail services by creating a new account, put up with a new email address.<br><br>It’d work if you had one email address and a few disposable emails from temp-mail.org and managed one account inbox.<br><br>The amazing thing about a disposable email address is you can forward directly to your real email account. In case the disposable email address is compromised, and you are suspicious of one of your contacts you can have those emails sent directly to your trash, and for those necessary connections have them sent directly to your real email address inbox.</p>`,
+    <p>Users choose to get disposable email address by creating a new email account with their current email provider’s such as Gmail, but the account comes with many challenges such as you will have to manage emails new account. Users, who opt for free mail services by creating a new account, put up with a new email address.<br><br>It’d work if you had one email address and a few disposable emails from your temp mail and managed one account inbox.<br><br>The amazing thing about a disposable email address is you can forward directly to your real email account. In case the disposable email address is compromised, and you are suspicious of one of your contacts you can have those emails sent directly to your trash, and for those necessary connections have them sent directly to your real email address inbox.</p>`,
   },
 ];
 

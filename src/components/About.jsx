@@ -7,7 +7,7 @@ const About = () => {
     {
       title: "Privacy and Anonymity:",
       description: `
-    We value your privacy above all else. With Temp-Mail, you can generate
+    We value your privacy above all else. With Your-TempMail, you can generate
     a temporary email address instantly, without revealing any personal
     information. This ensures that your identity remains hidden,
     protecting you from unsolicited emails and potential data breaches.`,
@@ -25,7 +25,7 @@ const About = () => {
       title: "Spam-Free Inbox:",
       description: `
     Tired
-    of receiving endless promotional emails? Temp-Mail has got you covered.
+    of receiving endless promotional emails? Temp Mail has got you covered.
     Our service automatically filters out spam and unwanted messages,
     ensuring that your inbox remains clutter-free. You can focus on what
     matters while we handle the rest. 
@@ -35,7 +35,7 @@ const About = () => {
       title: "Multiple Domains:",
       description: `
     To cater to your
-    specific needs, Temp-Mail offers a wide range of domain options for your
+    specific needs, Temp Mail offers a wide range of domain options for your
     temporary email address. Choose from a variety of domains to create an
     address that suits your preferences and requirements. 
     `,
@@ -43,7 +43,7 @@ const About = () => {
     {
       title: " Temporary Email for Business:",
       description: `
-    Temp-Mail isn't just for personal use; it's also an
+    Temp Mail isn't just for personal use; it's also an
         invaluable tool for businesses. Protect your company's email addresses
         from being flooded with unwanted messages by using temporary emails for
         online registrations, customer support, and more.
@@ -54,14 +54,14 @@ const About = () => {
     <Container maxWidth="md">
       <Card style={{ padding: "2rem" }}>
         <Typography variant="h4" component="h1" align="center" gutterBottom>
-          Welcome to Temp-Mail: Your Temporary Email Solution
+          Welcome to Your Temp Mail: Your Temporary Email Solution
         </Typography>
         <Typography variant="body1" component="h1" align="center" sx={{ mb: 6 }}>
-          At Temp-Mail, we understand the importance of online privacy and the
+          At Your Temp Mail, we understand the importance of online privacy and the
           need for a reliable and secure temporary email service. In today's
           digital age, it's crucial to protect your personal information from
           unwanted spam, marketing emails, and potential data breaches. That's
-          why we created Temp-Mail, a hassle-free and anonymous solution to keep
+          why we created Temp Mail, a hassle-free and anonymous solution to keep
           your inbox clean and your identity secure.
         </Typography>
         <Typography variant="h5" component="h1" align="center" gutterBottom>
@@ -73,10 +73,10 @@ const About = () => {
           to empower our users with the ability to control their online presence
           while safeguarding their privacy. Whether you need to sign up for a
           service, participate in online forums, or access exclusive content,
-          Temp-Mail is here to protect your identity and personal information.
+          Temp Mail is here to protect your identity and personal information.
         </Typography>
         <Typography variant="h5" component="h1" align="center" gutterBottom>
-          Why Choose Temp-Mail?
+          Why Choose Your Temp Mail?
         </Typography>
         {mainPointList.map((point) => {
           return (
@@ -102,7 +102,7 @@ const About = () => {
         })}
 
         <Typography variant="h5" component="h1" align="center" gutterBottom>
-          Join the Temp-Mail Community
+          Join the Temp Mail Community
         </Typography>
         <Typography
           variant="body1"
@@ -110,10 +110,10 @@ const About = () => {
           align="center"
           sx={{ mb: 6 }}
         >
-          At Temp-Mail, we're more than just a temporary email service; we're a
+          At Your Temp Mail, we're more than just a temporary email service; we're a
           community of individuals who value privacy and security. Join us in
           our mission to reclaim control over your inbox and protect your online
-          identity. Start using Temp-Mail today and experience the freedom of a
+          identity. Start using Your Temp Mail today and experience the freedom of a
           clean, secure, and anonymous online presence.
         </Typography>
         <Typography variant="h5" component="h1" align="center" gutterBottom>
@@ -126,7 +126,7 @@ const About = () => {
           <br />
           <br />
           Protect your privacy, control your online presence, and embrace the
-          freedom of temporary email with Temp-Mail - your reliable temporary
+          freedom of temporary email with Temp Mail - your reliable temporary
           email solution.
         </Typography>
         {/* <Box my={4}>

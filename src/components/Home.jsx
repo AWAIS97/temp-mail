@@ -28,7 +28,7 @@ const Home = () => {
             10minutemail, 10minmail, throwaway email, fake-mail , fake email
             generator, burner mail or trash-mail. Many forums, Wi-Fi owners,
             websites and blogs ask visitors to register before they can view
-            content, post comments or download something. Temp-Mail - is most
+            content, post comments or download something. Temp Mail - is most
             advanced throwaway email service that helps you avoid spam and stay
             safe.
           </Typography>

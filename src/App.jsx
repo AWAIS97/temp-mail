@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     //TODO: HASH route OR BROWSER Route ?
-    <Router> 
+    <BrowserRouter> 
       <Navbar />
       <div style={{ margin: "6rem 0px" }}>
         <Routes>
@@ -54,7 +54,7 @@ function App() {
       <Footer />
 
       {/* <RouterProvider router={router} /> */}
-    </Router>
+    </BrowserRouter>
   );
 }
 
